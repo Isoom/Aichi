@@ -37,7 +37,7 @@ Website: Aichi
 	position: absolute;
 	top: 72px;
 	right: 30px;
-	background-color: rgba(213, 202, 173, 0.601);
+	background-color: rgb(217, 208, 186);
 	min-width: 100px;
 	box-shadow: 2px 2px 5px black;
 
@@ -123,7 +123,6 @@ body {
 	background-size: cover;
 	height: 100vh;
 	margin: 0;
-	
 }
 
 /* background - bambu */
@@ -523,13 +522,6 @@ tr:nth-child(even) {
 /* On screens that are 1000px or less */
 @media (max-width: 1000px) {
 
-	.menuGrid{
-		grid-template-columns: 1fr 1fr;
-		margin-left: 30px;
-		margin-right: 30px;
-		column-gap: 30px;
-	}
-
 	.bilderGrid{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -537,6 +529,14 @@ tr:nth-child(even) {
 		margin-right: 30px;
 		margin-left: 30px;
 	}
+
+	.menuGrid{
+		grid-template-columns: 1fr 1fr;
+		margin-left: 30px;
+		margin-right: 30px;
+		column-gap: 30px;
+	}
+
 
 	/* changes the logo size */
 	.logo{
@@ -617,5 +617,12 @@ tr:nth-child(even) {
 		background-repeat: repeat-y;
 	}
 
+}
+
+/* things to remove when printing html slides */
+@media print{
+	.back-button{
+		display: none;
+	}
 }
 

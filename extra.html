@@ -80,12 +80,15 @@
 			<div class="eForm-container">
 				<h2>Maila in om du har några synpunkter!</h2>
 
-				<form action="/action_page.php">
-					<label for="fname">Email:</label><br>
-					<input type="text" name="fname"><br>
+				<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+					<label for="name">Namn:</label><br>
+					<input type="text" name="name"><br>
+					<label for="email">Email:</label><br>
+					<input type="text" name="email"><br>
 					<input type="submit" value="Submit">
 				</form> 
-				
+
+
 			</div>
 			
 			<div class="list-container">
